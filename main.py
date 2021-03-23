@@ -1,11 +1,14 @@
-import winrm
+import requests
+from bs4 import BeautifulSoup
 
-ps_script = """$strComputer = $Host
-Clear
-$RAM = WmiObject Win32_ComputerSystem
-$MB = 1048576
 
-"Installed Memory: " + [int]($RAM.TotalPhysicalMemory /$MB) + " MB" """
+def scrape_page(page_url):
+    """Extracts HTML from a webpage"""
 
-s = winrm.Session('127.0.0.1', auth=('usuario', 'supersecret0'))
-r = s.run_ps(ps_script)
+    answer = requests.get(page_url)
+    content = answer.content
+    soup = BeautifulSoup(content, features='html.parser')
+
+    return soup
+
+print(scrape_page("https://www.hometogo.com/"))

@@ -1,6 +1,6 @@
 # Web-Scraping
 
-Descripcion del proyecto
+Descripción del proyecto
 
 Como consecuencia de la pandemia, los dos miembros de este equipo coincidimos en nuestras ganas de poder volver a viajar de nuevo. Por ello, y buscando una idea que podamos reutilizar en el futuro, nos hemos propuesto enfocar esta práctica en la obtención de los mejores resultados de alquileres turísticos en distintas zonas, con el fin de poder conseguir buenos tratos en cuanto por fin, podamos salir de viaje. 
 

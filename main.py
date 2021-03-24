@@ -7,9 +7,9 @@ def scrape_page(page_url):
 
     answer = requests.get(page_url)
     content = answer.content
-    soup = BeautifulSoup(answer, features='html.parser')
+    soup = BeautifulSoup(content, parser='lxml')
 
     return soup
 
 # print(scrape_page("https://www.hometogo.com/"))
-print(soup.prettify(scrape_page("https://www.hometogo.com/")))
+print(scrape_page("https://www.hometogo.com/").prettify())

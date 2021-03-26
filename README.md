@@ -13,7 +13,7 @@ Un buen viajero no tiene planes fijos ni tampoco la intención de llegar, pero e
 ### User Experience ###
 
 Lo primero que miramos es la experiencia de usuario al entrar en https://www.hometogo.com. 
-![](.README_images/pagina principal.png) para tener claro qué queremos extraer y cómo.
+![](.README_images/pag principal suiza.png) para tener claro qué queremos extraer y cómo.
 Como usuario, cuando entro en hometogo, lo primero que hago es seleccionar:
 - Destino
 - Fechas
@@ -21,7 +21,7 @@ Como usuario, cuando entro en hometogo, lo primero que hago es seleccionar:
 - Le damos a search
 
 Al hacer la búsqueda nos aparece un listado de resultados:
-![](.README_images/pag principal suiza.png)
+#FALTA IMAGEN
 con información de cada uno de los alojamientos disponibles.
 Adicionalmente si clicamos en "DETALLES" se nos redirige a una página donde nos da todos los detalles del alojamiento:
 ![](.README_images/detalles.png)
@@ -31,6 +31,17 @@ Una vez tenemos clara la experiencia de usuario que queremos replicar con el web
 ### Process Map ###
 ![](.README_images/Lucidchart.png)
 
+En este proyecto nos quedaremos solo con los resultados de la primera página ya que en una única página hay aproximadamente 280 resultados, y son suficientes para el trabajo que queremos hacer.
+
 ### Inspeccionar elementos de la página de resultados ###
+#### ¿Cuál es la información que nos interesa extrear? ####
+
+1) Nombre del alojamiento
+2) Donde encontrar el alojamiento
+3) Especificaciones del alojamiento
+4) Precio total del alojamiento
+5) Localización del alojamiento
+6) Política de cancelación
+7) Link a más detalles
 
 ![](.README_images/Inspeccion.png)

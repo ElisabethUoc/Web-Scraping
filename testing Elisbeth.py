@@ -60,8 +60,6 @@ def extract_element(listing_html, params):
     return output
 
 
-
-
 for feature in RULES_SEARCH_PAGE:
     try:
          print(f"{feature}: {extract_element(listings[0], RULES_SEARCH_PAGE[feature])}")

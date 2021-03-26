@@ -21,15 +21,15 @@ Como usuario, cuando entro en hometogo, lo primero que hago es seleccionar:
 - Le damos a search
 
 Al hacer la búsqueda nos aparece un listado de resultados:
-![](.README_images/Spain Results.png)
+![](.README_images/pag principal suiza.png)
 con información de cada uno de los alojamientos disponibles.
 Adicionalmente si clicamos en "DETALLES" se nos redirige a una página donde nos da todos los detalles del alojamiento:
-![](.README_images/Details Cala Llonga.png)
+![](.README_images/detalles.png)
 
 Una vez tenemos clara la experiencia de usuario que queremos replicar con el web scraping podemos pasar a definir cuál es el process map que mejor representa dicha experiencia.
 
 ### Process Map ###
-![](.README_images/Process Map.png)
+![](.README_images/Lucidchart.png)
 
 ### Inspeccionar elementos de la página de resultados ###
 

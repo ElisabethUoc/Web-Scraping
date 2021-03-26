@@ -3,11 +3,27 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from IPython.display import IFrame
+import time
 
 url = 'https://www.hometogo.com/search/5460aea910151?adults=2&arrival=2021-06-01&duration=13'
 
 driver = webdriver.Chrome('chromedriver')
 driver.get(url)
+
+time.sleep(2)  # Allow 2 seconds for the web page to open
+scroll_pause_time = 1 # You can set your own pause time. My laptop is a bit slow so I use 1 sec
+screen_height = driver.execute_script("return window.screen.height;")   # get the screen height of the web
+i = 1
+while True:
+    # scroll one screen height each time
+    driver.execute_script("window.scrollTo(0, {screen_height}*{i});".format(screen_height=screen_height, i=i))
+    i += 1
+    time.sleep(scroll_pause_time)
+    # update scroll height each time after scrolled, as the scroll height can change after we scrolled the page
+    scroll_height = driver.execute_script("return document.body.scrollHeight;")
+    # Break the loop when the height we need to scroll to is larger than the total scroll height
+    if (screen_height) * i > scroll_height:
+        break
 
 soup = BeautifulSoup(driver.page_source, 'html.parser')
 
@@ -15,7 +31,7 @@ soup = BeautifulSoup(driver.page_source, 'html.parser')
 listings = soup.find_all('div', 'posr h100p w100p')
 
 def get_listings(search_page):
-    soup = BeautifulSoup(driver.page_source.content, 'html.parser')
+    soup = BeautifulSoup(driver.page_source, 'html.parser')
     listings = soup.find_all('div', 'posr h100p w100p')
     return listings
 

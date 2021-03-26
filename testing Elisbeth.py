@@ -39,7 +39,10 @@ RULES_SEARCH_PAGE = {
     'name': {'tag': 'div', 'class': 'text-medium fwb c-black lh18 ovh text-overflow'},
     'price': {'tag': 'span', 'class': 'fwb wsnw fz16'},
     'location': {'tag': 'span', 'class': 'c-gray-extra-dark text-small text-overflow'},
-    'rating_n_reviews': {'tag': 'span', 'class': 'text-small c-accent-normal'},
+    'rating': {'tag': 'span', 'class': 'text-small c-accent-normal'},
+    'cancelation': {'tag': 'span', 'class': 'fz11'},
+    'specifications': {'tag': 'div', 'class': 'text-small text-overflow'}
+    'link': {'tag': 'a', 'get': 'href'}
 }
 
 

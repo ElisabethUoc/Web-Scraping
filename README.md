@@ -30,3 +30,7 @@ Una vez tenemos clara la experiencia de usuario que queremos replicar con el web
 
 ### Process Map ###
 ![](.README_images/Process Map.png)
+
+### Inspeccionar elementos de la página de resultados ###
+
+![](.README_images/Inspeccion.png)
